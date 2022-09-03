@@ -36,7 +36,6 @@ export default function Nodes({ $app, initialState, onClick, onBackClick }) {
   
       if ($node) {
         const { nodeId } = $node.dataset
-  
         if (!nodeId) {
           this.onBackClick()
           return

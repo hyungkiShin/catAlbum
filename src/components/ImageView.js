@@ -30,7 +30,6 @@ export default function ImageView({ $app, initialState, modalClose }) {
     })
   }
 
-  console.log('image view ',this.state)
   this.render = () => {
     this.$target.innerHTML = `<div class="content">${this.state ? `<img src="${IMAGE_PATH_PREFIX}${this.state}">` : ''}</div>`
 
